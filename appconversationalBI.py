@@ -192,7 +192,7 @@ Now write the actual implementation adapted to the user's question.
 
     # --- Call Gemini to generate the function code ---
     try:
-        model = genai.GenerativeModel("gemini-2.0-flash")
+        model = genai.GenerativeModel("gemini-3.5-flash")
         response = model.generate_content(prompt)
         code_raw = (response.text or "").strip()
     except Exception as e:
